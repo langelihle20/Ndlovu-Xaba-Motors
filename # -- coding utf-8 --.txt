@@ -1,0 +1,1138 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'nxmotors.ui'
+#
+# Created by: PyQt5 UI code generator 5.15.11
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Form(object):
+
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(1051, 679)
+
+        self.stackedWidget = QtWidgets.QStackedWidget(Form)
+        self.stackedWidget.setGeometry(QtCore.QRect(0, 0, 1051, 671))
+        self.stackedWidget.setStyleSheet(
+            "color: rgb(255, 255, 255);\n"
+            "background-color: rgb(27, 34, 124);"
+        )
+        self.stackedWidget.setObjectName("stackedWidget")
+
+        # =========================================================
+        # PAGE 1 - LOGIN
+        # =========================================================
+
+        self.page = QtWidgets.QWidget()
+        self.page.setObjectName("page")
+
+        self.label = QtWidgets.QLabel(self.page)
+        self.label.setGeometry(QtCore.QRect(0, 0, 1051, 661))
+        self.label.setStyleSheet(
+            "QLabel {\n"
+            "    font-size: 24px;\n"
+            "    font-weight: bold;\n"
+            "    padding: 10px;\n"
+            "}\n"
+            "QPushButton {\n"
+            "    padding: 8px 16px;\n"
+            "    border-radius: 5px;\n"
+            "    font-weight: bold;\n"
+            "}\n"
+            "QLineEdit {\n"
+            "    padding: 6px;\n"
+            "    border-radius: 4px;\n"
+            "}"
+        )
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("../images.png"))
+        self.label.setScaledContents(True)
+        self.label.setObjectName("label")
+
+        self.lineEdit = QtWidgets.QLineEdit(self.page)
+        self.lineEdit.setGeometry(QtCore.QRect(410, 240, 241, 22))
+        self.lineEdit.setObjectName("lineEdit")
+
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.page)
+        self.lineEdit_2.setGeometry(QtCore.QRect(410, 290, 241, 22))
+
+        # FIXED PASSWORD LINE
+        self.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
+
+        self.lineEdit_2.setObjectName("lineEdit_2")
+
+        self.pushButton = QtWidgets.QPushButton(self.page)
+        self.pushButton.setGeometry(QtCore.QRect(460, 360, 81, 21))
+
+        # FIXED LOGIN BUTTON STYLE
+        self.pushButton.setStyleSheet(
+            "color: rgb(245, 255, 216); "
+            "font-size: 10pt; "
+            "background-color: rgb(88, 155, 255);"
+        )
+
+        self.pushButton.setObjectName("pushButton")
+
+        self.label_3 = QtWidgets.QLabel(self.page)
+        self.label_3.setGeometry(QtCore.QRect(270, 290, 121, 21))
+        self.label_3.setStyleSheet(
+            "color: rgb(245, 255, 216); "
+            "font-size: 15pt; "
+            "background-color: rgb(255, 255, 255); "
+            "color: rgb(0, 0, 0);"
+        )
+        self.label_3.setObjectName("label_3")
+
+        self.label_4 = QtWidgets.QLabel(self.page)
+        self.label_4.setGeometry(QtCore.QRect(290, 90, 431, 41))
+        self.label_4.setStyleSheet(
+            "QLabel {\n"
+            "    background-color: rgb(255, 255, 255);\n"
+            "    color: rgb(0, 0, 0);\n"
+            "    font-size: 24px;\n"
+            "    font-weight: bold;\n"
+            "    padding: 10px;\n"
+            "}"
+        )
+        self.label_4.setObjectName("label_4")
+
+        self.label_7 = QtWidgets.QLabel(self.page)
+        self.label_7.setGeometry(QtCore.QRect(300, 50, 411, 41))
+        self.label_7.setStyleSheet(
+            "QLabel {\n"
+            "    background-color: rgb(255, 255, 255);\n"
+            "    font-size: 24px;\n"
+            "    font-weight: bold;\n"
+            "    padding: 10px;\n"
+            "    color: rgb(0, 0, 0);\n"
+            "}"
+        )
+        self.label_7.setObjectName("label_7")
+
+        self.label_8 = QtWidgets.QLabel(self.page)
+        self.label_8.setGeometry(QtCore.QRect(770, 650, 101, 21))
+        self.label_8.setObjectName("label_8")
+
+        self.label_9 = QtWidgets.QLabel(self.page)
+        self.label_9.setGeometry(QtCore.QRect(740, 660, 101, 21))
+        self.label_9.setObjectName("label_9")
+
+        self.label_10 = QtWidgets.QLabel(self.page)
+        self.label_10.setGeometry(QtCore.QRect(750, 660, 101, 21))
+        self.label_10.setObjectName("label_10")
+
+        self.label_2 = QtWidgets.QLabel(self.page)
+        self.label_2.setGeometry(QtCore.QRect(268, 240, 131, 20))
+        self.label_2.setStyleSheet(
+            "color: rgb(245, 255, 216); "
+            "font-size: 15pt; "
+            "background-color: rgb(255, 255, 255); "
+            "color: rgb(0, 0, 0);"
+        )
+        self.label_2.setObjectName("label_2")
+
+        self.stackedWidget.addWidget(self.page)
+
+        # =========================================================
+        # PAGE 2 - VEHICLE MANAGEMENT
+        # =========================================================
+
+        self.page_3 = QtWidgets.QWidget()
+        self.page_3.setObjectName("page_3")
+
+        self.VehicleManagement = QtWidgets.QLabel(self.page_3)
+        self.VehicleManagement.setGeometry(QtCore.QRect(320, 50, 401, 51))
+        self.VehicleManagement.setStyleSheet(
+            "QLabel {\n"
+            "    font-size: 24px;\n"
+            "    font-weight: bold;\n"
+            "    padding: 10px;\n"
+            "}"
+        )
+        self.VehicleManagement.setObjectName("VehicleManagement")
+
+        self.VehicleLineEdit = QtWidgets.QLineEdit(self.page_3)
+        self.VehicleLineEdit.setGeometry(QtCore.QRect(170, 180, 113, 22))
+        self.VehicleLineEdit.setObjectName("VehicleLineEdit")
+
+        self.RegistrationLabel = QtWidgets.QLabel(self.page_3)
+        self.RegistrationLabel.setGeometry(QtCore.QRect(650, 160, 141, 16))
+        self.RegistrationLabel.setObjectName("RegistrationLabel")
+
+        self.EnterRegistration = QtWidgets.QLineEdit(self.page_3)
+        self.EnterRegistration.setGeometry(QtCore.QRect(650, 180, 121, 22))
+        self.EnterRegistration.setObjectName("EnterRegistration")
+
+        self.makeLineEdit = QtWidgets.QLineEdit(self.page_3)
+        self.makeLineEdit.setGeometry(QtCore.QRect(170, 270, 113, 22))
+        self.makeLineEdit.setObjectName("makeLineEdit")
+
+        self.makeLabel = QtWidgets.QLabel(self.page_3)
+        self.makeLabel.setGeometry(QtCore.QRect(170, 250, 61, 20))
+        self.makeLabel.setObjectName("makeLabel")
+
+        self.modelLabel = QtWidgets.QLabel(self.page_3)
+        self.modelLabel.setGeometry(QtCore.QRect(650, 250, 71, 20))
+        self.modelLabel.setObjectName("modelLabel")
+
+        self.modelLineEdit = QtWidgets.QLineEdit(self.page_3)
+        self.modelLineEdit.setGeometry(QtCore.QRect(650, 270, 113, 22))
+        self.modelLineEdit.setObjectName("modelLineEdit")
+
+        self.yearLineEdit = QtWidgets.QLineEdit(self.page_3)
+        self.yearLineEdit.setGeometry(QtCore.QRect(170, 380, 113, 22))
+        self.yearLineEdit.setObjectName("yearLineEdit")
+
+        self.yearLabel = QtWidgets.QLabel(self.page_3)
+        self.yearLabel.setGeometry(QtCore.QRect(170, 360, 71, 16))
+        self.yearLabel.setObjectName("yearLabel")
+
+        self.PriceLabel = QtWidgets.QLabel(self.page_3)
+        self.PriceLabel.setGeometry(QtCore.QRect(650, 360, 61, 16))
+        self.PriceLabel.setObjectName("PriceLabel")
+
+        self.PriceLineEdit = QtWidgets.QLineEdit(self.page_3)
+        self.PriceLineEdit.setGeometry(QtCore.QRect(650, 380, 113, 22))
+        self.PriceLineEdit.setObjectName("PriceLineEdit")
+
+        self.VehicletypeLabel = QtWidgets.QLabel(self.page_3)
+        self.VehicletypeLabel.setGeometry(QtCore.QRect(170, 450, 131, 20))
+        self.VehicletypeLabel.setObjectName("VehicletypeLabel")
+
+        self.VehicleID_2 = QtWidgets.QLabel(self.page_3)
+        self.VehicleID_2.setGeometry(QtCore.QRect(170, 160, 61, 20))
+        self.VehicleID_2.setObjectName("VehicleID_2")
+
+        self.vehicleTypeComboBox = QtWidgets.QComboBox(self.page_3)
+        self.vehicleTypeComboBox.setGeometry(QtCore.QRect(170, 470, 75, 22))
+        self.vehicleTypeComboBox.setObjectName("vehicleTypeComboBox")
+        self.vehicleTypeComboBox.addItem("")
+        self.vehicleTypeComboBox.addItem("")
+        self.vehicleTypeComboBox.addItem("")
+
+        self.AvailabilityLabel = QtWidgets.QLabel(self.page_3)
+        self.AvailabilityLabel.setGeometry(QtCore.QRect(650, 450, 91, 16))
+        self.AvailabilityLabel.setObjectName("AvailabilityLabel")
+
+        self.AvailabilityComboBox = QtWidgets.QComboBox(self.page_3)
+        self.AvailabilityComboBox.setGeometry(QtCore.QRect(650, 470, 75, 22))
+        self.AvailabilityComboBox.setObjectName("AvailabilityComboBox")
+        self.AvailabilityComboBox.addItem("")
+        self.AvailabilityComboBox.addItem("")
+        self.AvailabilityComboBox.addItem("")
+
+        self.clearVehicleButton = QtWidgets.QPushButton(self.page_3)
+        self.clearVehicleButton.setGeometry(QtCore.QRect(360, 610, 111, 26))
+        self.clearVehicleButton.setObjectName("clearVehicleButton")
+
+        self.saveVehicleButton = QtWidgets.QPushButton(self.page_3)
+        self.saveVehicleButton.setGeometry(QtCore.QRect(230, 610, 111, 26))
+        self.saveVehicleButton.setObjectName("saveVehicleButton")
+
+        self.vehicleBackButton = QtWidgets.QPushButton(self.page_3)
+        self.vehicleBackButton.setGeometry(QtCore.QRect(500, 610, 111, 26))
+        self.vehicleBackButton.setObjectName("vehicleBackButton")
+
+        self.vehicleNextButton = QtWidgets.QPushButton(self.page_3)
+        self.vehicleNextButton.setGeometry(QtCore.QRect(640, 610, 141, 26))
+        self.vehicleNextButton.setObjectName("vehicleNextButton")
+
+        self.stackedWidget.addWidget(self.page_3)
+
+        # =========================================================
+        # PAGE 3 - CUSTOMER & BOOKING MANAGEMENT
+        # =========================================================
+
+        self.page_4 = QtWidgets.QWidget()
+        self.page_4.setObjectName("page_4")
+
+        self.customerandbookingmanagement = QtWidgets.QLabel(self.page_4)
+        self.customerandbookingmanagement.setGeometry(
+            QtCore.QRect(220, 20, 691, 51)
+        )
+        self.customerandbookingmanagement.setStyleSheet(
+            "QLabel {\n"
+            "    font-size: 24px;\n"
+            "    font-weight: bold;\n"
+            "    padding: 10px;\n"
+            "}"
+        )
+        self.customerandbookingmanagement.setObjectName(
+            "customerandbookingmanagement"
+        )
+
+        self.VehicleIDLineEdit_2 = QtWidgets.QLineEdit(self.page_4)
+        self.VehicleIDLineEdit_2.setGeometry(
+            QtCore.QRect(150, 140, 113, 22)
+        )
+        self.VehicleIDLineEdit_2.setObjectName("VehicleIDLineEdit_2")
+
+        self.contactnumberLabel = QtWidgets.QLabel(self.page_4)
+        self.contactnumberLabel.setGeometry(
+            QtCore.QRect(150, 300, 91, 16)
+        )
+        self.contactnumberLabel.setObjectName("contactnumberLabel")
+
+        self.fullnamelabel = QtWidgets.QLabel(self.page_4)
+        self.fullnamelabel.setGeometry(QtCore.QRect(150, 210, 61, 20))
+        self.fullnamelabel.setObjectName("fullnamelabel")
+
+        self.contactnumber = QtWidgets.QLineEdit(self.page_4)
+        self.contactnumber.setGeometry(QtCore.QRect(150, 320, 131, 22))
+        self.contactnumber.setObjectName("contactnumber")
+
+        self.VehicleID = QtWidgets.QLabel(self.page_4)
+        self.VehicleID.setGeometry(QtCore.QRect(150, 120, 81, 20))
+        self.VehicleID.setObjectName("VehicleID")
+
+        self.fullname = QtWidgets.QLineEdit(self.page_4)
+        self.fullname.setGeometry(QtCore.QRect(150, 230, 131, 22))
+        self.fullname.setObjectName("fullname")
+
+        self.Email = QtWidgets.QLineEdit(self.page_4)
+        self.Email.setGeometry(QtCore.QRect(150, 400, 131, 22))
+        self.Email.setObjectName("Email")
+
+        self.Emaillabel = QtWidgets.QLabel(self.page_4)
+        self.Emaillabel.setGeometry(QtCore.QRect(150, 380, 91, 16))
+        self.Emaillabel.setObjectName("Emaillabel")
+
+        self.BookingBackButton_2 = QtWidgets.QPushButton(self.page_4)
+        self.BookingBackButton_2.setGeometry(
+            QtCore.QRect(550, 590, 111, 26)
+        )
+        self.BookingBackButton_2.setObjectName("BookingBackButton_2")
+
+        self.clearVehicleButton_2 = QtWidgets.QPushButton(self.page_4)
+        self.clearVehicleButton_2.setGeometry(
+            QtCore.QRect(410, 590, 111, 26)
+        )
+        self.clearVehicleButton_2.setObjectName("clearVehicleButton_2")
+
+        self.SaveBooking = QtWidgets.QPushButton(self.page_4)
+        self.SaveBooking.setGeometry(QtCore.QRect(280, 590, 111, 26))
+        self.SaveBooking.setObjectName("SaveBooking")
+
+        self.Selectvehicle = QtWidgets.QLabel(self.page_4)
+        self.Selectvehicle.setGeometry(QtCore.QRect(150, 460, 131, 20))
+        self.Selectvehicle.setObjectName("Selectvehicle")
+
+        self.NextButton_2 = QtWidgets.QPushButton(self.page_4)
+        self.NextButton_2.setGeometry(QtCore.QRect(690, 590, 141, 26))
+        self.NextButton_2.setObjectName("NextButton_2")
+
+        self.vehicleTypeComboBox_2 = QtWidgets.QComboBox(self.page_4)
+        self.vehicleTypeComboBox_2.setGeometry(
+            QtCore.QRect(150, 480, 75, 22)
+        )
+        self.vehicleTypeComboBox_2.setObjectName("vehicleTypeComboBox_2")
+
+        for item in range(5):
+            self.vehicleTypeComboBox_2.addItem("")
+
+        self.BookingTypeComboBox_3 = QtWidgets.QComboBox(self.page_4)
+        self.BookingTypeComboBox_3.setGeometry(
+            QtCore.QRect(690, 140, 121, 22)
+        )
+        self.BookingTypeComboBox_3.setObjectName("BookingTypeComboBox_3")
+
+        for item in range(3):
+            self.BookingTypeComboBox_3.addItem("")
+
+        self.BookingTypeLabel = QtWidgets.QLabel(self.page_4)
+        self.BookingTypeLabel.setGeometry(
+            QtCore.QRect(690, 120, 131, 20)
+        )
+        self.BookingTypeLabel.setObjectName("BookingTypeLabel")
+
+        self.calendarWidget = QtWidgets.QCalendarWidget(self.page_4)
+        self.calendarWidget.setGeometry(
+            QtCore.QRect(690, 190, 256, 190)
+        )
+        self.calendarWidget.setObjectName("calendarWidget")
+
+        self.label_5 = QtWidgets.QLabel(self.page_4)
+        self.label_5.setGeometry(QtCore.QRect(720, 410, 49, 16))
+        self.label_5.setText("")
+        self.label_5.setObjectName("label_5")
+
+        self.bookingtime = QtWidgets.QLabel(self.page_4)
+        self.bookingtime.setGeometry(QtCore.QRect(690, 420, 91, 16))
+        self.bookingtime.setObjectName("bookingtime")
+
+        self.timeComboBox_4 = QtWidgets.QComboBox(self.page_4)
+        self.timeComboBox_4.setGeometry(
+            QtCore.QRect(690, 440, 75, 22)
+        )
+        self.timeComboBox_4.setObjectName("timeComboBox_4")
+
+        for item in range(4):
+            self.timeComboBox_4.addItem("")
+
+        self.stackedWidget.addWidget(self.page_4)
+
+        # =========================================================
+        # PAGE 4 - SALES & SUMMARY
+        # =========================================================
+
+        self.page_2 = QtWidgets.QWidget()
+        self.page_2.setObjectName("page_2")
+
+        self.EnterSalePrice = QtWidgets.QLineEdit(self.page_2)
+        self.EnterSalePrice.setGeometry(QtCore.QRect(120, 340, 131, 22))
+        self.EnterSalePrice.setObjectName("EnterSalePrice")
+
+        self.VehicleSold = QtWidgets.QLabel(self.page_2)
+        self.VehicleSold.setGeometry(QtCore.QRect(120, 230, 71, 20))
+        self.VehicleSold.setObjectName("VehicleSold")
+
+        self.saleproce = QtWidgets.QLabel(self.page_2)
+        self.saleproce.setGeometry(QtCore.QRect(120, 320, 91, 16))
+        self.saleproce.setObjectName("saleproce")
+
+        self.SaleID = QtWidgets.QLabel(self.page_2)
+        self.SaleID.setGeometry(QtCore.QRect(120, 140, 81, 20))
+        self.SaleID.setObjectName("SaleID")
+
+        self.SaleAndSummary = QtWidgets.QLabel(self.page_2)
+        self.SaleAndSummary.setGeometry(
+            QtCore.QRect(270, 30, 691, 51)
+        )
+        self.SaleAndSummary.setStyleSheet(
+            "QLabel {\n"
+            "    font-size: 24px;\n"
+            "    font-weight: bold;\n"
+            "    padding: 10px;\n"
+            "}"
+        )
+        self.SaleAndSummary.setObjectName("SaleAndSummary")
+
+        self.EnterSaleID = QtWidgets.QLineEdit(self.page_2)
+        self.EnterSaleID.setGeometry(QtCore.QRect(120, 160, 113, 22))
+        self.EnterSaleID.setObjectName("EnterSaleID")
+
+        self.Paymentmethod = QtWidgets.QLabel(self.page_2)
+        self.Paymentmethod.setGeometry(
+            QtCore.QRect(600, 310, 111, 16)
+        )
+        self.Paymentmethod.setObjectName("Paymentmethod")
+
+        self.Customername_2 = QtWidgets.QLabel(self.page_2)
+        self.Customername_2.setGeometry(
+            QtCore.QRect(600, 140, 91, 20)
+        )
+        self.Customername_2.setObjectName("Customername_2")
+
+        self.Customername = QtWidgets.QLineEdit(self.page_2)
+        self.Customername.setGeometry(
+            QtCore.QRect(600, 160, 113, 22)
+        )
+        self.Customername.setObjectName("Customername")
+
+        self.dateEdit = QtWidgets.QDateEdit(self.page_2)
+        self.dateEdit.setGeometry(
+            QtCore.QRect(600, 250, 110, 22)
+        )
+        self.dateEdit.setObjectName("dateEdit")
+
+        self.vehicleIDlabel_4 = QtWidgets.QLabel(self.page_2)
+        self.vehicleIDlabel_4.setGeometry(
+            QtCore.QRect(600, 230, 81, 20)
+        )
+        self.vehicleIDlabel_4.setObjectName("vehicleIDlabel_4")
+
+        self.vehicleSoldComboBox_4 = QtWidgets.QComboBox(self.page_2)
+        self.vehicleSoldComboBox_4.setGeometry(
+            QtCore.QRect(120, 250, 91, 22)
+        )
+        self.vehicleSoldComboBox_4.setObjectName(
+            "vehicleSoldComboBox_4"
+        )
+
+        for item in range(5):
+            self.vehicleSoldComboBox_4.addItem("")
+
+        self.paymentmethodsComboBox = QtWidgets.QComboBox(self.page_2)
+        self.paymentmethodsComboBox.setGeometry(
+            QtCore.QRect(600, 330, 91, 22)
+        )
+        self.paymentmethodsComboBox.setObjectName(
+            "paymentmethodsComboBox"
+        )
+
+        for item in range(4):
+            self.paymentmethodsComboBox.addItem("")
+
+        self.clear = QtWidgets.QPushButton(self.page_2)
+        self.clear.setGeometry(QtCore.QRect(320, 590, 111, 26))
+        self.clear.setObjectName("clear")
+
+        self.Savesale = QtWidgets.QPushButton(self.page_2)
+        self.Savesale.setGeometry(QtCore.QRect(190, 590, 111, 26))
+        self.Savesale.setObjectName("Savesale")
+
+        self.back = QtWidgets.QPushButton(self.page_2)
+        self.back.setGeometry(QtCore.QRect(460, 590, 111, 26))
+        self.back.setObjectName("back")
+
+        self.ExitSystem = QtWidgets.QPushButton(self.page_2)
+        self.ExitSystem.setGeometry(
+            QtCore.QRect(600, 590, 141, 26)
+        )
+        self.ExitSystem.setObjectName("ExitSystem")
+
+        self.contactnumber_3 = QtWidgets.QLineEdit(self.page_2)
+        self.contactnumber_3.setGeometry(
+            QtCore.QRect(120, 420, 671, 91)
+        )
+        self.contactnumber_3.setObjectName("contactnumber_3")
+
+        self.stackedWidget.addWidget(self.page_2)
+
+        # =========================================================
+        # BUTTON CONNECTIONS
+        # =========================================================
+
+        self.pushButton.clicked.connect(self.login)
+
+        self.vehicleNextButton.clicked.connect(
+            lambda: self.stackedWidget.setCurrentIndex(2)
+        )
+
+        self.vehicleBackButton.clicked.connect(
+            lambda: self.stackedWidget.setCurrentIndex(0)
+        )
+
+        self.NextButton_2.clicked.connect(
+            lambda: self.stackedWidget.setCurrentIndex(3)
+        )
+
+        self.BookingBackButton_2.clicked.connect(
+            lambda: self.stackedWidget.setCurrentIndex(1)
+        )
+
+        self.back.clicked.connect(
+            lambda: self.stackedWidget.setCurrentIndex(2)
+        )
+
+        self.ExitSystem.clicked.connect(Form.close)
+
+        self.clearVehicleButton.clicked.connect(
+            self.clear_vehicle
+        )
+
+        self.clearVehicleButton_2.clicked.connect(
+            self.clear_booking
+        )
+
+        self.clear.clicked.connect(
+            self.clear_sale
+        )
+
+        self.saveVehicleButton.clicked.connect(
+            self.save_vehicle
+        )
+
+        self.SaveBooking.clicked.connect(
+            self.save_booking
+        )
+
+        self.Savesale.clicked.connect(
+            self.save_sale
+        )
+
+        # =========================================================
+        # FINISH SETUP
+        # =========================================================
+
+        self.retranslateUi(Form)
+        self.stackedWidget.setCurrentIndex(0)
+
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    # =============================================================
+    # LOGIN FUNCTION
+    # =============================================================
+
+    def login(self):
+
+        username = self.lineEdit.text()
+        password = self.lineEdit_2.text()
+
+        # CHANGE THESE TO YOUR ASSIGNMENT CREDENTIALS
+        correct_username = "ndlovu"
+        correct_password = "1234"
+
+        if username.lower() == correct_username.lower() and password == correct_password:
+
+            print("Login Successful")
+
+            # Move from Login page to Vehicle Management
+            self.stackedWidget.setCurrentIndex(1)
+
+            # Clear login fields
+            self.lineEdit.clear()
+            self.lineEdit_2.clear()
+
+        else:
+
+            print("Incorrect username or password")
+
+            QtWidgets.QMessageBox.warning(
+                None,
+                "Login Failed",
+                "Incorrect username or password."
+            )
+
+    # =============================================================
+    # VEHICLE FUNCTIONS
+    # =============================================================
+
+    def clear_vehicle(self):
+
+        self.VehicleLineEdit.clear()
+        self.EnterRegistration.clear()
+        self.makeLineEdit.clear()
+        self.modelLineEdit.clear()
+        self.yearLineEdit.clear()
+        self.PriceLineEdit.clear()
+
+        print("Vehicle fields cleared")
+
+    def save_vehicle(self):
+
+        vehicle_id = self.VehicleLineEdit.text()
+        registration = self.EnterRegistration.text()
+        make = self.makeLineEdit.text()
+        model = self.modelLineEdit.text()
+        year = self.yearLineEdit.text()
+        price = self.PriceLineEdit.text()
+        vehicle_type = self.vehicleTypeComboBox.currentText()
+        availability = self.AvailabilityComboBox.currentText()
+
+        if vehicle_id == "" or make == "" or model == "":
+
+            QtWidgets.QMessageBox.warning(
+                None,
+                "Missing Information",
+                "Please enter the Vehicle ID, Make and Model."
+            )
+
+        else:
+
+            print("Vehicle Saved")
+            print("Vehicle ID:", vehicle_id)
+            print("Registration:", registration)
+            print("Make:", make)
+            print("Model:", model)
+            print("Year:", year)
+            print("Price:", price)
+            print("Vehicle Type:", vehicle_type)
+            print("Availability:", availability)
+
+            QtWidgets.QMessageBox.information(
+                None,
+                "Vehicle Saved",
+                "Vehicle information saved successfully."
+            )
+
+    # =============================================================
+    # BOOKING FUNCTIONS
+    # =============================================================
+
+    def clear_booking(self):
+
+        self.VehicleIDLineEdit_2.clear()
+        self.fullname.clear()
+        self.contactnumber.clear()
+        self.Email.clear()
+
+        print("Booking fields cleared")
+
+    def save_booking(self):
+
+        vehicle_id = self.VehicleIDLineEdit_2.text()
+        fullname = self.fullname.text()
+        contact = self.contactnumber.text()
+        email = self.Email.text()
+
+        booking_type = self.BookingTypeComboBox_3.currentText()
+        vehicle = self.vehicleTypeComboBox_2.currentText()
+        time = self.timeComboBox_4.currentText()
+
+        date = self.calendarWidget.selectedDate().toString(
+            "dd/MM/yyyy"
+        )
+
+        if fullname == "" or contact == "":
+
+            QtWidgets.QMessageBox.warning(
+                None,
+                "Missing Information",
+                "Please enter the customer's name and contact number."
+            )
+
+        else:
+
+            print("Booking Saved")
+            print("Vehicle ID:", vehicle_id)
+            print("Customer:", fullname)
+            print("Contact:", contact)
+            print("Email:", email)
+            print("Vehicle:", vehicle)
+            print("Booking Type:", booking_type)
+            print("Date:", date)
+            print("Time:", time)
+
+            QtWidgets.QMessageBox.information(
+                None,
+                "Booking Saved",
+                "Booking saved successfully."
+            )
+
+    # =============================================================
+    # SALES FUNCTIONS
+    # =============================================================
+
+    def clear_sale(self):
+
+        self.EnterSaleID.clear()
+        self.EnterSalePrice.clear()
+        self.Customername.clear()
+        self.contactnumber_3.clear()
+
+        print("Sales fields cleared")
+
+    def save_sale(self):
+
+        sale_id = self.EnterSaleID.text()
+        sale_price = self.EnterSalePrice.text()
+        customer = self.Customername.text()
+        vehicle = self.vehicleSoldComboBox_4.currentText()
+        payment = self.paymentmethodsComboBox.currentText()
+
+        date = self.dateEdit.date().toString(
+            "dd/MM/yyyy"
+        )
+
+        if sale_id == "" or sale_price == "" or customer == "":
+
+            QtWidgets.QMessageBox.warning(
+                None,
+                "Missing Information",
+                "Please enter the Sale ID, Sale Price and Customer Name."
+            )
+
+        else:
+
+            print("Sale Saved")
+            print("Sale ID:", sale_id)
+            print("Vehicle:", vehicle)
+            print("Sale Price:", sale_price)
+            print("Customer:", customer)
+            print("Payment Method:", payment)
+            print("Sale Date:", date)
+
+            self.contactnumber_3.setText(
+                "Sales Summary\n"
+                "Sale ID: " + sale_id + "\n"
+                "Vehicle: " + vehicle + "\n"
+                "Customer: " + customer + "\n"
+                "Sale Price: R" + sale_price + "\n"
+                "Payment Method: " + payment + "\n"
+                "Sale Date: " + date
+            )
+
+            QtWidgets.QMessageBox.information(
+                None,
+                "Sale Saved",
+                "Sale saved successfully."
+            )
+
+    # =============================================================
+    # TEXT / LABELS
+    # =============================================================
+
+    def retranslateUi(self, Form):
+
+        _translate = QtCore.QCoreApplication.translate
+
+        Form.setWindowTitle(
+            _translate(
+                "Form",
+                "Ndlovu & Xaba Motors Vehicle Administration System"
+            )
+        )
+
+        # LOGIN PAGE
+        self.pushButton.setText(
+            _translate("Form", "Login")
+        )
+
+        self.label_3.setText(
+            _translate("Form", "Password:")
+        )
+
+        self.label_4.setText(
+            _translate("Form", "Vehicle Administration System")
+        )
+
+        self.label_7.setText(
+            _translate("Form", "NDLOVU & XABA MOTORS")
+        )
+
+        self.label_8.setText(
+            _translate("Form", "")
+        )
+
+        self.label_9.setText(
+            _translate("Form", "")
+        )
+
+        self.label_10.setText(
+            _translate("Form", "")
+        )
+
+        self.label_2.setText(
+            _translate("Form", "Username:")
+        )
+
+        # VEHICLE PAGE
+        self.VehicleManagement.setText(
+            _translate("Form", "VEHICLE MANAGEMENT")
+        )
+
+        self.VehicleLineEdit.setPlaceholderText(
+            _translate("Form", "Enter Vehicle ID")
+        )
+
+        self.RegistrationLabel.setText(
+            _translate("Form", "Registration")
+        )
+
+        self.EnterRegistration.setPlaceholderText(
+            _translate("Form", "Enter registration")
+        )
+
+        self.makeLineEdit.setPlaceholderText(
+            _translate("Form", "e.g. Toyota")
+        )
+
+        self.makeLabel.setText(
+            _translate("Form", "Make")
+        )
+
+        self.modelLabel.setText(
+            _translate("Form", "Model")
+        )
+
+        self.modelLineEdit.setPlaceholderText(
+            _translate("Form", "e.g. Corolla")
+        )
+
+        self.yearLineEdit.setPlaceholderText(
+            _translate("Form", "e.g. 2026")
+        )
+
+        self.yearLabel.setText(
+            _translate("Form", "Year")
+        )
+
+        self.PriceLabel.setText(
+            _translate("Form", "Price")
+        )
+
+        self.PriceLineEdit.setPlaceholderText(
+            _translate("Form", "R0.00")
+        )
+
+        self.VehicletypeLabel.setText(
+            _translate("Form", "Vehicle Type")
+        )
+
+        self.VehicleID_2.setText(
+            _translate("Form", "Vehicle ID")
+        )
+
+        self.vehicleTypeComboBox.setItemText(
+            0, _translate("Form", "New")
+        )
+
+        self.vehicleTypeComboBox.setItemText(
+            1, _translate("Form", "Used")
+        )
+
+        self.vehicleTypeComboBox.setItemText(
+            2, _translate("Form", "Demo")
+        )
+
+        self.AvailabilityLabel.setText(
+            _translate("Form", "Availability")
+        )
+
+        self.AvailabilityComboBox.setItemText(
+            0, _translate("Form", "Available")
+        )
+
+        self.AvailabilityComboBox.setItemText(
+            1, _translate("Form", "Reserved")
+        )
+
+        self.AvailabilityComboBox.setItemText(
+            2, _translate("Form", "Sold")
+        )
+
+        self.clearVehicleButton.setText(
+            _translate("Form", "Clear")
+        )
+
+        self.saveVehicleButton.setText(
+            _translate("Form", "Save Vehicle")
+        )
+
+        self.vehicleBackButton.setText(
+            _translate("Form", "Back")
+        )
+
+        self.vehicleNextButton.setText(
+            _translate("Form", "Next")
+        )
+
+        # BOOKING PAGE
+        self.customerandbookingmanagement.setText(
+            _translate(
+                "Form",
+                "CUSTOMER & BOOKING MANAGEMENT"
+            )
+        )
+
+        self.VehicleID.setText(
+            _translate("Form", "Vehicle ID")
+        )
+
+        self.VehicleIDLineEdit_2.setPlaceholderText(
+            _translate("Form", "Enter Vehicle ID")
+        )
+
+        self.fullnamelabel.setText(
+            _translate("Form", "Full Name")
+        )
+
+        self.fullname.setPlaceholderText(
+            _translate("Form", "Enter Full Name")
+        )
+
+        self.contactnumberLabel.setText(
+            _translate("Form", "Contact Number")
+        )
+
+        self.contactnumber.setPlaceholderText(
+            _translate("Form", "Enter Contact Number")
+        )
+
+        self.Emaillabel.setText(
+            _translate("Form", "Email")
+        )
+
+        self.Email.setPlaceholderText(
+            _translate("Form", "Enter Email")
+        )
+
+        self.Selectvehicle.setText(
+            _translate("Form", "Select Vehicle")
+        )
+
+        self.vehicleTypeComboBox_2.setItemText(
+            0, _translate("Form", "Toyota")
+        )
+
+        self.vehicleTypeComboBox_2.setItemText(
+            1, _translate("Form", "Corolla")
+        )
+
+        self.vehicleTypeComboBox_2.setItemText(
+            2, _translate("Form", "Volkswagen Polo")
+        )
+
+        self.vehicleTypeComboBox_2.setItemText(
+            3, _translate("Form", "Hyundai i20")
+        )
+
+        self.vehicleTypeComboBox_2.setItemText(
+            4, _translate("Form", "Ford Ranger")
+        )
+
+        self.BookingTypeLabel.setText(
+            _translate("Form", "Booking Type")
+        )
+
+        self.BookingTypeComboBox_3.setItemText(
+            0, _translate("Form", "Test Drive")
+        )
+
+        self.BookingTypeComboBox_3.setItemText(
+            1, _translate("Form", "Vehicle Viewing")
+        )
+
+        self.BookingTypeComboBox_3.setItemText(
+            2, _translate("Form", "Service Booking")
+        )
+
+        self.bookingtime.setText(
+            _translate("Form", "Booking Time")
+        )
+
+        self.timeComboBox_4.setItemText(
+            0, _translate("Form", "08:00 AM")
+        )
+
+        self.timeComboBox_4.setItemText(
+            1, _translate("Form", "10:00 AM")
+        )
+
+        self.timeComboBox_4.setItemText(
+            2, _translate("Form", "12:00 PM")
+        )
+
+        self.timeComboBox_4.setItemText(
+            3, _translate("Form", "14:00 PM")
+        )
+
+        self.BookingBackButton_2.setText(
+            _translate("Form", "Back")
+        )
+
+        self.clearVehicleButton_2.setText(
+            _translate("Form", "Clear")
+        )
+
+        self.SaveBooking.setText(
+            _translate("Form", "Save Booking")
+        )
+
+        self.NextButton_2.setText(
+            _translate("Form", "Next")
+        )
+
+        # SALES PAGE
+        self.EnterSalePrice.setPlaceholderText(
+            _translate("Form", "Enter sale price")
+        )
+
+        self.VehicleSold.setText(
+            _translate("Form", "Vehicle Sold")
+        )
+
+        self.saleproce.setText(
+            _translate("Form", "Sale Price")
+        )
+
+        self.SaleID.setText(
+            _translate("Form", "Sale ID")
+        )
+
+        self.SaleAndSummary.setText(
+            _translate("Form", "SALES & SUMMARY")
+        )
+
+        self.EnterSaleID.setPlaceholderText(
+            _translate("Form", "Enter sale ID")
+        )
+
+        self.Paymentmethod.setText(
+            _translate("Form", "Payment Method")
+        )
+
+        self.Customername_2.setText(
+            _translate("Form", "Customer Name")
+        )
+
+        self.Customername.setPlaceholderText(
+            _translate("Form", "Enter Customer Name")
+        )
+
+        self.vehicleIDlabel_4.setText(
+            _translate("Form", "Sale Date")
+        )
+
+        self.vehicleSoldComboBox_4.setItemText(
+            0, _translate("Form", "Toyota")
+        )
+
+        self.vehicleSoldComboBox_4.setItemText(
+            1, _translate("Form", "Corolla")
+        )
+
+        self.vehicleSoldComboBox_4.setItemText(
+            2, _translate("Form", "Volkswagen Polo")
+        )
+
+        self.vehicleSoldComboBox_4.setItemText(
+            3, _translate("Form", "Hyundai i20")
+        )
+
+        self.vehicleSoldComboBox_4.setItemText(
+            4, _translate("Form", "Ford Ranger")
+        )
+
+        self.paymentmethodsComboBox.setItemText(
+            0, _translate("Form", "Cash")
+        )
+
+        self.paymentmethodsComboBox.setItemText(
+            1, _translate("Form", "Bank Transfer")
+        )
+
+        self.paymentmethodsComboBox.setItemText(
+            2, _translate("Form", "Finance")
+        )
+
+        self.paymentmethodsComboBox.setItemText(
+            3, _translate("Form", "Debit Card")
+        )
+
+        self.clear.setText(
+            _translate("Form", "Clear")
+        )
+
+        self.Savesale.setText(
+            _translate("Form", "Save Sale")
+        )
+
+        self.back.setText(
+            _translate("Form", "Back")
+        )
+
+        self.ExitSystem.setText(
+            _translate("Form", "Exit System")
+        )
+
+        self.contactnumber_3.setPlaceholderText(
+            _translate(
+                "Form",
+                "Sales Summary - Total Sales: R0.00"
+            )
+        )
+
+
+# =============================================================
+# RUN THE APPLICATION
+# =============================================================
+
+if __name__ == "__main__":
+
+    import sys
+
+    app = QtWidgets.QApplication(sys.argv)
+
+    Form = QtWidgets.QWidget()
+
+    ui = Ui_Form()
+    ui.setupUi(Form)
+
+    Form.show()
+
+    sys.exit(app.exec_())
+    
